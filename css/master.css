@@ -1,0 +1,472 @@
+body {
+    padding-top: 50px;
+    position: relative !important;
+}
+
+.my-navbar {
+    background-color: #3949ab;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    min-height: 50px;
+    border: none;
+}
+
+
+.my-navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 2em;
+    line-height: 20px;
+    min-height: 40px;
+}
+
+.my-navbar .navbar-brand:hover,
+.my-navbar .navbar-brand:focus{
+  color: #FFF !important;
+
+}
+
+.my-navbar .navbar-nav>li>a {
+    color: #FFF;
+    line-height: 20px;
+    font-size: 1.2em
+}
+
+.my-navbar .navbar-nav>li>a:hover,
+.my-navbar .navbar-nav>li>a:focus,
+.my-navbar .navbar-nav>.active>a,
+.my-navbar .navbar-nav>.active>a:hover,
+.my-navbar .navbar-nav>.active>a:focus{
+    border-bottom: 5px solid #fff;
+    color: #FFF;
+    background-color: #3949ab;
+}
+
+.my-navbar .navbar-toggle {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    border: 2px;
+    border-style: solid;
+    border-color: #fff;
+    color: #FFF;
+}
+
+.my-navbar .navbar-toggle:focus, .my-navbar .navbar-toggle:hover {
+    background-color: #FFF;
+    color: #3949ab !important;
+}
+
+.my-navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.my-navbar .navbar-header i{
+  margin-left: 10px;
+}
+
+#about {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    color: white;
+    background-color: #212121;
+    background-size: cover;
+}
+
+#about .isi-content {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.learn-more {
+    padding-top: 143px;
+    width: 100%;
+}
+
+.btn-custom {
+    background-color: #3949ab;
+    border-color: #3949ab;
+    border-radius: 0;
+}
+
+.btn-custom:hover, .btn-custom:focus, .btn-custom:active {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #3949ab;
+}
+
+#about-me {
+    width: 100%;
+}
+
+#about-me .isi-content {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+#skills {
+    max-width: 100%;
+    color: #fff;
+    background-color: #212121;
+    background-size: cover;
+}
+
+.divider {
+    width: 30%;
+    border: 2px;
+    border-radius: 5px;
+    border-color: #333;
+    border-style: solid;
+    ;
+}
+
+.divider-contact {
+    width: 80%;
+    border: 1px;
+    border-radius: 5px;
+    border-color: #fff;
+    border-style: solid;
+}
+
+#about-me .isi-content>p {
+    margin-top: 32px;
+}
+
+.about-img {
+    margin-top: 32px;
+    width: 200px;
+    max-width: 100%;
+}
+
+#skills .isi-content {
+    padding-top: 90px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-bottom: 50px;
+}
+
+#skills .divider {
+    border-color: #fff;
+    margin-bottom: 64px;
+}
+
+.progress-bar {
+    font-weight: 700;
+}
+
+#portfolio {
+    max-width: 100%;
+}
+
+#portfolio .isi-content {
+    padding-top: 90px;
+}
+
+.carousel-control {
+    width: 4%;
+}
+
+.carousel-control.left {
+    margin-left: 15px;
+    background-image: none;
+}
+
+.carousel-control.right {
+    margin-right: 15px;
+    background-image: none;
+}
+
+@media (max-width: 767px) {
+    .my-navbar .navbar-nav>li>a:hover,
+    .my-navbar .navbar-nav>li>a:focus,
+    .my-navbar .navbar-nav>.active>a,
+    .my-navbar .navbar-nav>.active>a:hover{
+        border: none;
+        color: #3949ab !important;
+        background-color: #FFF !important;
+    }
+    .carousel-inner .active.left {
+        left: -100%;
+    }
+    .carousel-inner .next {
+        left: 100%;
+    }
+    .carousel-inner .prev {
+        left: -100%;
+    }
+    .active>div {
+        display: none;
+    }
+    .active>div:first-child+div {
+        display: none;
+    }
+    .active>div:first-child {
+        display: block;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .carousel-inner .active.left {
+        left: -50%;
+    }
+    .carousel-inner .next {
+        left: 50%;
+    }
+    .carousel-inner .prev {
+        left: -50%;
+    }
+    .active>div {
+        display: none;
+    }
+    .active>div:first-child, .active>div:first-child+div {
+        display: block;
+    }
+    .carousel-control.left, .carousel-control.right {
+        top: 40% !important;
+        bottom: 60%;
+    }
+
+    textarea{
+      min-height: 302px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-control.left, .carousel-control.right {
+        top: 30% !important;
+        bottom: 70%;
+    }
+    .carousel-inner .active.left {
+        left: -25%;
+    }
+    .carousel-inner .next {
+        left: 25%;
+    }
+    .carousel-inner .prev {
+        left: -25%;
+    }
+    .active>div {
+        display: none;
+    }
+    .active>div:first-child, .active>div:first-child+div, .active>div:first-child+div+div, .active>div:first-child+div+div+div {
+        display: block;
+    }
+    .margin-me {
+        margin-top: 128px !important;
+    }
+    .portfolio-img {
+        margin-bottom: 128px !important;
+    }
+    textarea{
+      min-height: 302px;
+    }
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+.margin-me {
+    margin-top: 64px;
+}
+
+#contact {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 100% !important;
+    max-width: 100%;
+    color: #fff;
+    background-color: #212121;
+    background-size: cover;
+}
+
+#contact .divider {
+    border-color: #fff;
+    margin-bottom: 64px;
+}
+
+#contact a {
+    color: #fff;
+    font-size: 16px;
+}
+
+#contact a>i {
+    margin-right: 8px;
+}
+
+#contact .row {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 302px;
+    border-radius: 0 !important;
+}
+
+.btn-block {
+    margin-bottom: 64px;
+    margin-top: 32px;
+}
+
+#contact .btn {
+    border-radius: 0px;
+    border: 4px;
+    border-style: solid;
+    border-color: #212121;
+}
+
+.facebook {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.facebook:hover, .facebook:focus {
+    background-color: #fff !important;
+    color: #3B5998 !important;
+}
+
+.google-plus {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.google-plus:hover, .google-plus:focus {
+    background-color: #fff !important;
+    color: #DB4437 !important;
+}
+
+.instagram {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.instagram:hover, .instagram:focus {
+    background-color: #FFF !important;
+    color: #4E4E4E !important;
+}
+
+.github {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.github:hover, .github:focus {
+    background-color: #fff !important;
+    color: #4078C0 !important;
+}
+
+.so {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.so:hover, .so:focus {
+    color: #F48024 !important;
+    background-color: #fff !important;
+}
+
+.pinterest {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.pinterest:hover, .pinterest:focus {
+    color: #BD081C !important;
+    background-color: #fff !important;
+}
+
+.twitter {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.twitter:hover, .twitter:focus {
+    background-color: #FFF !important;
+    color: #0C8FC3 !important;
+}
+
+.fcc {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.fcc:hover, .fcc:focus {
+    background-color: #FFF !important;
+    color: #006402 !important;
+}
+
+.inbox {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.inbox:focus, .inbox:hover {
+    background-color: #FFF !important;
+    color: #2A54C5 !important;
+}
+
+.phone {
+    background-color: #FFF !important;
+    color: #212121 !important;
+}
+
+.phone:focus, .phone:hover {
+    background-color: #FFF !important;
+    color: #37C837 !important;
+}
+
+.submit {
+    background-color: #FFF !important;
+    color: #212121 !important;
+    width: 50%;
+    border: none;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+}
+
+.submit:hover {
+    width: 100%;
+}
+
+.progress {
+    height: 35px;
+}
+
+.progress-bar {
+    line-height: 35px;
+}
+
+.form-group{
+  margin-top: 12px;
+}
+input {
+  margin-bottom: 8px;
+  border-radius: 0 !important;
+}
+
+.divider-contact-visit{
+  width: 100%;
+  border: 1px;
+  border-radius: 5px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+#footer{
+      padding-top: 32px;
+      padding-bottom: 16px;
+      color: white;
+      background-color: #3949ab;
+      background-size: cover;
+}
+#footer span{
+  line-height: 64px;
+}
